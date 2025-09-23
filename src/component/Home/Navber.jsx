@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router";
 import { FiSearch, FiMenu, FiX } from "react-icons/fi";
-import logo from "../assets/Screenshot_2025-09-23_195230-removebg-preview.png";
+import logo from "../../assets/Screenshot_2025-09-23_195230-removebg-preview.png";
 
 const Navbar = () => {
     const [showLogo, setShowLogo] = useState(false);
@@ -34,7 +34,7 @@ const Navbar = () => {
                 {/* Left: Logo + Text */}
                 <div className="flex items-center space-x-2">
                     {/* Mobile: always show logo */}
-                    <img src={logo} alt="TechCrunch Logo" className="h-6 w-10 md:hidden" />
+                    <img src={logo} alt="TechCrunch Logo" className="h-6 w-8 md:hidden" />
 
                     {/* Desktop: logo+text only after scroll */}
                     <div
