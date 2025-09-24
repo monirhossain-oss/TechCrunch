@@ -73,6 +73,50 @@ const newsData = [
         author: "TechCrunch Events · 10 hours ago",
     },
 ];
+const rightSideNews = [
+    {
+        category: "FEATURED",
+        title: "Apple may delay the iPhone 16 Pro Max launch due to supply chain issues",
+        author: "John Doe",
+        time: "5 hours ago",
+    },
+    {
+        category: "AI",
+        title: "Google announces new AI tools for developers worldwide",
+        author: "TechCrunch",
+        time: "7 hours ago",
+    },
+    {
+        category: "TRANSPORTATION",
+        title: "Tesla’s new Model X hits the market with improved battery life",
+        author: "Jane Smith",
+        time: "12 hours ago",
+    },
+    {
+        category: "IN BRIEF",
+        title: "OpenAI is building five new Stargate data centers with Oracle and SoftBank",
+        author: "Maxwell Zeff",
+        time: "9 hours ago",
+    },
+    {
+        category: "AI",
+        title: "Building the new backbone of space at TechCrunch Disrupt 2025",
+        author: "TechCrunch Events",
+        time: "10 hours ago",
+    },
+    {
+        category: "APPS",
+        title: "The rise of Fellou, World's First Agentic AI Browser",
+        author: "TechCrunch Events",
+        time: "10 hours ago",
+    },
+    {
+        category: "AI",
+        title: "What is Bluesky? Everything to know about the X competitor",
+        author: "TechCrunch Events",
+        time: "10 hours ago",
+    },
+];
 
 const LatestNews = () => {
     return (
@@ -120,12 +164,37 @@ const LatestNews = () => {
                         </div>
                     ))}
                 </div>
+                <button
+                    className="px-6 py-3 flex items-center w-30 gap-2 border-2 cursor-pointer border-green-600 text-lg rounded-full text-green-900
+                        bg-gradient-to-r from-green-900 to-green-900 bg-[length:0%_100%] bg-left bg-no-repeat 
+                        transition-all duration-500 ease-out hover:bg-[length:100%_100%] hover:text-white"
+                >
+                    Next <span><FiArrowUpRight /></span>
+                </button>
             </div>
 
             {/* Right Side */}
-            <div className="bg-green-300 flex items-center justify-center text-white font-bold">
-                Right Side News
+            <div className="flex flex-col gap-8 p-6">
+                {rightSideNews.map((news, index) => (
+                    <div
+                        key={index}
+                        className="flex flex-col border-4 border-green-600 w-full p-4 text-black"
+                    >
+                        <p className="text-green-600 text-sm font-semibold uppercase mb-1">
+                            {news.category}
+                        </p>
+                        <h2 className="font-bold text-lg hover:underline cursor-pointer leading-snug">
+                            {news.title}
+                        </h2>
+                        <p className="text-gray-500 text-sm mt-1">
+                            {news.author} · {news.time}
+                        </p>
+                    </div>
+                ))}
             </div>
+
+
+
         </div>
     );
 };
