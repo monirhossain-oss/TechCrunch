@@ -1,0 +1,133 @@
+import React from "react";
+import { FiArrowUpRight } from "react-icons/fi";
+import news1 from '../../assets/Oakland-Ballers.webp'
+import news2 from '../../assets/banner2.webp'
+import news3 from '../../assets/banner3.webp'
+import news4 from '../../assets/banner4.webp'
+import news5 from '../../assets/banner5.webp'
+import news6 from '../../assets/banner6.webp'
+import news7 from '../../assets/banner7.webp'
+import news8 from '../../assets/banner8.webp'
+import news9 from '../../assets/banner9.webp'
+import news10 from '../../assets/banner10.webp'
+
+const newsData = [
+    {
+        img: news1,
+        category: "IN BRIEF",
+        title: "OpenAI is building five new Stargate data centers with Oracle and SoftBank",
+        author: "Maxwell Zeff · 9 hours ago",
+    },
+    {
+        img: news2,
+        category: "AI",
+        title: "Building the new backbone of space at TechCrunch Disrupt 2025",
+        author: "TechCrunch Events · 10 hours ago",
+    },
+    {
+        img: news3,
+        category: "APPS",
+        title: "The rise of Fellou, World's First Agentic AI Browser",
+        author: "TechCrunch Events · 10 hours ago",
+    },
+    {
+        img: news4,
+        category: "AI",
+        title: "What is Bluesky? Everything to know about the X competitor",
+        author: "TechCrunch Events · 10 hours ago",
+    },
+    {
+        img: news5,
+        category: "AI",
+        title: "Google’s AI Mode arrives in Spanish globally",
+        author: "TechCrunch Events · 10 hours ago",
+    },
+    {
+        img: news6,
+        category: "APPS",
+        title: "Google Cloud’s COO isn’t stressed about landing the AI giants",
+        author: "TechCrunch Events · 10 hours ago",
+    },
+    {
+        img: news7,
+        category: "AI",
+        title: "Scott Wiener on his fight to make Big Tech disclose AI’s dangers",
+        author: "TechCrunch Events · 10 hours ago",
+    },
+    {
+        img: news8,
+        category: "GOVERNMENTS & POLICE",
+        title: "How Google’s dev tools manager makes AI coding work",
+        author: "TechCrunch Events · 10 hours ago",
+    },
+    {
+        img: news9,
+        category: "TRANSPORTATION",
+        title: "Disney is raising the price of Disney+, Hulu subscriptions next month",
+        author: "TechCrunch Events · 10 hours ago",
+    },
+    {
+        img: news10,
+        category: "IN BRIEF",
+        title: "Jaguar Land Rover to pause production until next week – at least",
+        author: "TechCrunch Events · 10 hours ago",
+    },
+];
+
+const LatestNews = () => {
+    return (
+        <div className="grid grid-cols-4 gap-4 min-h-60 p-6 bg-white">
+            {/* Left Side */}
+            <div className="col-span-3 flex flex-col gap-6">
+                {/* Header Section */}
+                <div className="flex items-center text-white font-bold">
+                    <h1 className="text-green-700 mr-4 text-7xl">Latest News</h1>
+                    <button
+                        className="px-6 py-3 flex items-center gap-2 border-2 cursor-pointer border-green-600 text-lg rounded-full text-green-900
+                        bg-gradient-to-r from-green-900 to-green-900 bg-[length:0%_100%] bg-left bg-no-repeat 
+                        transition-all duration-500 ease-out hover:bg-[length:100%_100%] hover:text-white"
+                    >
+                        See More <span><FiArrowUpRight /></span>
+                    </button>
+                </div>
+
+                {/* News List Section */}
+                <div className="flex flex-col gap-6">
+                    {newsData.map((news, index) => (
+                        <div
+                            key={index}
+                            className="flex gap-4 w-full border-b border-gray-200 pb-4"
+                        >
+                            {/* Left Image */}
+                            <div className="w-40 h-28 flex-shrink-0">
+                                <img
+                                    src={news.img}
+                                    alt="news"
+                                    className="w-full h-full object-cover"
+                                />
+                            </div>
+
+                            {/* Right Content */}
+                            <div className="flex flex-col justify-center text-black">
+                                <p className="text-green-600 text-sm font-semibold uppercase mb-1">
+                                    {news.category}
+                                </p>
+                                <h2 className="font-bold text-lg hover:underline cursor-pointer leading-snug">
+                                    {news.title}
+                                </h2>
+                                <p className="text-gray-500 text-sm mt-1">{news.author}</p>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </div>
+
+            {/* Right Side */}
+            <div className="bg-green-300 flex items-center justify-center text-white font-bold">
+                Right Side News
+            </div>
+        </div>
+    );
+};
+
+export default LatestNews;
