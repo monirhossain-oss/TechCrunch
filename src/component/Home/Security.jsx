@@ -131,24 +131,8 @@ const Security = () => {
 
                 {/* Card 4 */}
                 <div >
-
                 </div>
             </div>
-
-            <div className="grid grid-cols-1 mt-4 px-4 lg:grid-cols-6 h-20">
-                <div className="lg:col-span-4 grid grid-rows-2">
-                    <div className="grid grid-cols-2">
-                        <div className="bg-blue-600"></div>
-                        <div className="bg-blue-600"></div>
-                    </div>
-                    <div className="grid grid-cols-2">
-                        <div className="bg-purple-300"></div>
-                        <div></div>
-                    </div>
-                </div>
-                <div className="lg:col-span-2"></div>
-            </div>
-
         </div>
     );
 };

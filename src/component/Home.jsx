@@ -15,6 +15,7 @@ import Security from './Home/Security';
 import APP from './Home/APP.JSX';
 import Transportation from './Home/Transportation';
 import Video from './Home/Video';
+import Venture from './Home/Venture';
 
 const Home = () => {
     return (
@@ -31,6 +32,7 @@ const Home = () => {
             <Startups></Startups>
             <Video></Video>
             <Security></Security>
+            <Venture></Venture>
             <APP></APP>
             <Transportation></Transportation>
             <Footer></Footer>
