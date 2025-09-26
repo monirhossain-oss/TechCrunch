@@ -1,6 +1,5 @@
 import React from 'react';
 import Navber from './Home/Navber';
-import App from '../App';
 import Banner from './Home/Banner';
 import Footer from './Footer';
 import LatestNews from './Home/LatestNews';
@@ -12,13 +11,13 @@ import Startups from './Home/Startups';
 import RoadDisrupt from './Home/RoadDisrupt';
 import AI from './Home/AI';
 import Security from './Home/Security';
-import APP from './Home/APP.JSX';
 import Transportation from './Home/Transportation';
 import Video from './Home/Video';
 import Venture from './Home/Venture';
 import Podcasts from './Home/Podcasts';
 import InBrief from './Home/InBrief';
 import Title from './Home/Title';
+import APPSection from './Home/APPSection';
 
 const Home = () => {
     return (
@@ -36,7 +35,7 @@ const Home = () => {
             <Video></Video>
             <Security></Security>
             <Venture></Venture>
-            <APP></APP>
+            <APPSection></APPSection>
             <Transportation></Transportation>
             <InBrief></InBrief>
             <Podcasts></Podcasts>

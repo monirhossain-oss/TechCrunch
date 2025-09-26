@@ -3,7 +3,7 @@ import { FiArrowUpRight } from 'react-icons/fi';
 import banner1 from '../../assets/app.webp';
 import banner2 from '../../assets/app2.webp';
 
-const APP = () => {
+const APPSection = () => {
     return (
         <div className="py-8">
             {/* Title + Button */}
@@ -154,4 +154,4 @@ const APP = () => {
     );
 };
 
-export default APP;
+export default APPSection;
