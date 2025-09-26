@@ -23,14 +23,14 @@ const Podcasts = () => {
     ];
 
     return (
-        <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div className="w-full max-w-7xl mx-auto px-4 sm:px-4 lg:px-4 py-8">
             {/* Title + Button */}
             <div className="flex flex-col sm:flex-row sm:items-center mb-8 gap-4 sm:gap-6">
                 <h1 className="text-green-700 font-extrabold text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight">
                     Podcasts
                 </h1>
                 <button
-                    className="px-5 py-2 sm:px-6 sm:py-3 flex items-center gap-2 border-2 border-green-600 text-sm sm:text-base md:text-lg rounded-full text-green-900
+                    className="px-5 py-2 sm:px-6 sm:py-3 cursor-pointer flex items-center gap-2 border-2 border-green-600 text-sm sm:text-base md:text-lg rounded-full text-green-900
                      bg-gradient-to-r from-green-900 to-green-900 bg-[length:0%_100%] bg-left bg-no-repeat
                      transition-all duration-500 ease-out hover:bg-[length:100%_100%] hover:text-white"
                 >
@@ -39,13 +39,13 @@ const Podcasts = () => {
             </div>
 
             {/* Grid Layout */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
                 {/* Left Side (2 cols, 2 cards) */}
-                <div className="col-span-1 md:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 p-2 sm:p-4">
+                <div className="col-span-1 md:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 ">
                     {cards.slice(0, 2).map((card, idx) => (
                         <div
                             key={idx}
-                            className="hover:shadow-lg transition rounded-lg overflow-hidden"
+                            className="hover:shadow-lg p-2 transition overflow-hidden"
                         >
                             {/* Image Wrapper */}
                             <div className="w-full h-52 sm:h-64 md:h-72 overflow-hidden mb-4 sm:mb-6">

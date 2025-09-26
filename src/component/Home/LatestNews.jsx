@@ -129,8 +129,8 @@ const LatestNews = () => {
       {/* Left Side (Main News List) */}
       <div className="md:col-span-3 flex flex-col gap-6">
         {/* Header Section */}
-        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-          <h1 className="text-green-700 font-extrabold text-5xl md:text-6xl">
+        <div className="flex flex-col sm:flex-row sm:items-center cursor-pointer gap-4">
+          <h1 className="text-green-700 font-extrabold text-5xl md:text-7xl">
             Latest News
           </h1>
           <button

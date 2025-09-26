@@ -17,6 +17,7 @@ import Transportation from './Home/Transportation';
 import Video from './Home/Video';
 import Venture from './Home/Venture';
 import Podcasts from './Home/Podcasts';
+import InBrief from './Home/InBrief';
 
 const Home = () => {
     return (
@@ -36,6 +37,7 @@ const Home = () => {
             <Venture></Venture>
             <APP></APP>
             <Transportation></Transportation>
+            <InBrief></InBrief>
             <Podcasts></Podcasts>
             <Footer></Footer>
         </div>

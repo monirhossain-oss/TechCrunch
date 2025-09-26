@@ -63,7 +63,7 @@ const Venture = () => {
                     Venture
                 </h1>
                 <button
-                    className="px-6 py-3 flex items-center gap-2 border-2 border-green-600 text-base sm:text-lg rounded-full text-green-900
+                    className="px-6 py-3 flex items-center cursor-pointer gap-2 border-2 border-green-600 text-base sm:text-lg rounded-full text-green-900
                      bg-gradient-to-r from-green-900 to-green-900 bg-[length:0%_100%] bg-left bg-no-repeat
                      transition-all duration-500 ease-out hover:bg-[length:100%_100%] hover:text-white"
                 >
