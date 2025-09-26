@@ -18,12 +18,13 @@ import Video from './Home/Video';
 import Venture from './Home/Venture';
 import Podcasts from './Home/Podcasts';
 import InBrief from './Home/InBrief';
+import Title from './Home/Title';
 
 const Home = () => {
     return (
         <div>
             <Navber></Navber>
-            <App></App>
+            <Title></Title>
             <Banner></Banner>
             <LatestNews></LatestNews>
             <Storylines></Storylines>
