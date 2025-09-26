@@ -13,6 +13,8 @@ import RoadDisrupt from './Home/RoadDisrupt';
 import AI from './Home/AI';
 import Security from './Home/Security';
 import APP from './Home/APP.JSX';
+import Transportation from './Home/Transportation';
+import Video from './Home/Video';
 
 const Home = () => {
     return (
@@ -27,8 +29,10 @@ const Home = () => {
             <RoadDisrupt></RoadDisrupt>
             <AI></AI>
             <Startups></Startups>
+            <Video></Video>
             <Security></Security>
             <APP></APP>
+            <Transportation></Transportation>
             <Footer></Footer>
         </div>
     );

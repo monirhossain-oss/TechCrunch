@@ -7,7 +7,7 @@ import logo from "../assets/Screenshot_2025-09-23_195230-removebg-preview.png";
 
 const Footer = () => {
     return (
-        <footer className="bg-[#1d211f] text-gray-300 px-6 md:px-12 py-12">
+        <footer className="bg-[#1d211f] text-gray-300 mt-20 px-6 md:px-12 py-12">
             <div className="max-w-7xl mx-auto">
                 {/* Main Grid: Left + Right */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
