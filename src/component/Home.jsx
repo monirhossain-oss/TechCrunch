@@ -6,6 +6,8 @@ import Footer from './Footer';
 import LatestNews from './Home/LatestNews';
 import Storylines from './Home/Storylines';
 import Events from './Home/Events';
+import NewsletterSubscription from './Home/NewsletterSubscription';
+import Newsletter from './Home/NewsletterSubscription';
 
 const Home = () => {
     return (
@@ -16,6 +18,7 @@ const Home = () => {
             <LatestNews></LatestNews>
             <Storylines></Storylines>
             <Events></Events>
+            <Newsletter></Newsletter>
             <Footer></Footer>
         </div>
     );
