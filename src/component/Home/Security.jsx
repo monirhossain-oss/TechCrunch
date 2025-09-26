@@ -1,15 +1,15 @@
 import React from 'react';
 import { FiArrowUpRight } from 'react-icons/fi';
-import banner1 from '../../assets/gettyimages-881828548-1.webp';
-import banner2 from '../../assets/GettyImages-1460858229(2).webp';
+import banner1 from '../../assets/security.webp';
+import banner2 from '../../assets/security2.webp';
 
-const Startups = () => {
+const Security = () => {
     return (
         <div className="py-8">
             {/* Title + Button */}
             <div className="flex flex-col sm:flex-row sm:items-center my-8 px-4 gap-4 sm:gap-6">
                 <h1 className="text-green-700 font-extrabold text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight">
-                    Startups
+                    Security
                 </h1>
                 <button
                     className="px-6 py-3 flex items-center gap-2 border-2 cursor-pointer border-green-600 text-base sm:text-lg rounded-full text-green-900
@@ -39,7 +39,7 @@ const Startups = () => {
                             TECHCRUNCH DISRUPT 2025
                         </p>
                         <h2 className="relative text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-white inline-block group-hover:underline underline-offset-4 decoration-2">
-                            Aaron Levie on building for the long game in enterprise software at TechCrunch Disrupt 2025
+                            Thousands of Indian bank transfer records found online
                         </h2>
                         <p className="text-sm sm:text-base md:text-lg font-medium text-gray-300 mt-3">
                             TechCrunch Events - 17 hours ago
@@ -71,7 +71,7 @@ const Startups = () => {
 
                         {/* Title with Hover Underline */}
                         <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-gray-900 leading-snug inline-block group-hover:underline underline-offset-4 decoration-2">
-                            Startup founders say Trump’s $100K H-1B fee is a ‘talent tariff’ that will hurt innovation
+                            Viral call-recording app Neon goes dark after exposing users’ phone numbers, 
                         </h2>
 
                         {/* Bottom Text */}
@@ -154,4 +154,4 @@ const Startups = () => {
     );
 };
 
-export default Startups;
+export default Security;

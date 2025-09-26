@@ -11,6 +11,7 @@ import Newsletter from './Home/NewsletterSubscription';
 import Startups from './Home/Startups';
 import RoadDisrupt from './Home/RoadDisrupt';
 import AI from './Home/AI';
+import Security from './Home/Security';
 
 const Home = () => {
     return (
@@ -25,6 +26,7 @@ const Home = () => {
             <RoadDisrupt></RoadDisrupt>
             <AI></AI>
             <Startups></Startups>
+            <Security></Security>
             <Footer></Footer>
         </div>
     );
