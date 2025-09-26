@@ -1,15 +1,15 @@
 import React from 'react';
 import { FiArrowUpRight } from 'react-icons/fi';
-import banner1 from '../../assets/security.webp';
-import banner2 from '../../assets/security2.webp';
+import banner1 from '../../assets/app.webp';
+import banner2 from '../../assets/app2.webp';
 
-const Security = () => {
+const APP = () => {
     return (
         <div className="py-8">
             {/* Title + Button */}
             <div className="flex flex-col sm:flex-row sm:items-center my-8 px-4 gap-4 sm:gap-6">
                 <h1 className="text-green-700 font-extrabold text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight">
-                    Security
+                    APP
                 </h1>
                 <button
                     className="px-6 py-3 flex items-center gap-2 border-2 cursor-pointer border-green-600 text-base sm:text-lg rounded-full text-green-900
@@ -36,13 +36,13 @@ const Security = () => {
                     {/* Text content */}
                     <div className="absolute bottom-6 left-4 right-4 z-10">
                         <p className="inline-block border-t-2 border-gray-300 text-white text-sm sm:text-base md:text-lg mb-2">
-                            TECHCRUNCH DISRUPT 2025
+                            Apps
                         </p>
                         <h2 className="relative text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-white inline-block group-hover:underline underline-offset-4 decoration-2">
-                            Thousands of Indian bank transfer records found online
+                            Trump signs executive order to facilitate TikTok deal
                         </h2>
                         <p className="text-sm sm:text-base md:text-lg font-medium text-gray-300 mt-3">
-                            TechCrunch Events - 17 hours ago
+                            Aisha Malik 3:27 PM PDT · September 25, 2025
                         </p>
                     </div>
                 </div>
@@ -65,17 +65,18 @@ const Security = () => {
                         {/* Top Category with Border */}
                         <p className="text-sm font-medium text-green-600">
                             <span className="inline-block border-t border-gray-400 pt-1">
-                                GOVERNMENT & POLICY
+                                APP
                             </span>
                         </p>
 
                         {/* Title with Hover Underline */}
                         <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-gray-900 leading-snug inline-block group-hover:underline underline-offset-4 decoration-2">
-                            Viral call-recording app Neon goes dark after exposing users’ phone numbers, 
+                            Meta launches ‘Vibes,’ a short-form video feed of AI slop
                         </h2>
+
                         {/* Bottom Text */}
                         <p className="text-sm sm:text-base text-gray-600 group-hover:underline underline-offset-4 decoration-2 cursor-pointer">
-                            TechCrunch Events - 18 hours ago
+                            Aisha Malik 3:15 PM PDT · September 25, 2025
                         </p>
                     </div>
                 </div>
@@ -153,4 +154,4 @@ const Security = () => {
     );
 };
 
-export default Security;
+export default APP;
