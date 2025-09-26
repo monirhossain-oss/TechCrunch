@@ -130,7 +130,7 @@ const Newsletters = () => {
             </div>
 
             {/* Bottom Layout */}
-            <div className="grid grid-cols-1 lg:grid-cols-6 h-20">
+            <div className="grid grid-cols-1 px-4 lg:grid-cols-6 h-20">
                 <div className="lg:col-span-4 grid grid-rows-2">
                     <div className="grid grid-cols-2">
                         <div className="bg-blue-600"></div>

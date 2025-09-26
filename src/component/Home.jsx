@@ -8,6 +8,8 @@ import Storylines from './Home/Storylines';
 import Events from './Home/Events';
 import NewsletterSubscription from './Home/NewsletterSubscription';
 import Newsletter from './Home/NewsletterSubscription';
+import Startups from './Home/Startups';
+import RoadDisrupt from './Home/RoadDisrupt';
 
 const Home = () => {
     return (
@@ -19,6 +21,8 @@ const Home = () => {
             <Storylines></Storylines>
             <Events></Events>
             <Newsletter></Newsletter>
+            <RoadDisrupt></RoadDisrupt>
+            <Startups></Startups>
             <Footer></Footer>
         </div>
     );
