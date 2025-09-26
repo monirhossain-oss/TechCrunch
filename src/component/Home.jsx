@@ -4,6 +4,8 @@ import App from '../App';
 import Banner from './Home/Banner';
 import Footer from './Footer';
 import LatestNews from './Home/LatestNews';
+import Storylines from './Home/Storylines';
+import Events from './Home/Events';
 
 const Home = () => {
     return (
@@ -12,6 +14,8 @@ const Home = () => {
             <App></App>
             <Banner></Banner>
             <LatestNews></LatestNews>
+            <Storylines></Storylines>
+            <Events></Events>
             <Footer></Footer>
         </div>
     );
