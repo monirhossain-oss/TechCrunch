@@ -6,7 +6,7 @@ const RoadDisrupt = () => {
     return (
         <div className="py-8">
             {/* Title + Button */}
-            <div className="flex flex-col sm:flex-row sm:items-center justify-between my-8 px-4 gap-4 sm:gap-6">
+            <div className="flex flex-col sm:flex-row sm:items-center  my-8 px-4 gap-4 sm:gap-6">
                 <h1 className="text-green-700 font-extrabold text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight">
                     The Road to Disrupt
                 </h1>
@@ -22,7 +22,7 @@ const RoadDisrupt = () => {
             {/* Cards Section */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 px-4">
                 {/* Card 1 */}
-                <div className="group relative overflow-hidden cursor-pointer h-[450px] sm:h-[550px] md:h-[650px] rounded-lg">
+                <div className="group relative overflow-hidden cursor-pointer h-[450px] sm:h-[550px] md:h-[650px]">
                     {/* Background Image */}
                     <div
                         style={{ backgroundImage: `url(${banner1})` }}
@@ -47,7 +47,7 @@ const RoadDisrupt = () => {
                 </div>
 
                 {/* Card 2 */}
-                <div className="group relative overflow-hidden cursor-pointer bg-white shadow h-[500px] sm:h-[600px] md:h-[650px] rounded-lg flex flex-col">
+                <div className="group relative overflow-hidden cursor-pointer bg-white shadow h-[500px] sm:h-[600px] md:h-[650px] flex flex-col">
                     {/* Top Image Section */}
                     <div className="relative h-2/3 w-full overflow-hidden">
                         <img
@@ -84,41 +84,44 @@ const RoadDisrupt = () => {
 
             <div className="grid grid-cols-1 mt-8 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-4 items-stretch">
                 {/* Card 1 */}
-                <div className="bg-white shadow rounded-lg p-6 flex flex-col justify-between">
+                {/* Card 1 */}
+                <div className="group bg-white shadow p-6 flex flex-col justify-between cursor-pointer">
                     <p className="text-sm font-medium text-green-600 mb-3">
                         <span className="inline-block border-t border-gray-400">
                             CATEGORY
                         </span>
                     </p>
-                    <h2 className="text-xl font-bold text-gray-900 mb-3">
+                    <h2 className="text-xl font-bold text-gray-900 mb-3 inline-block group-hover:underline underline-offset-4 decoration-2">
                         What top VCs want from AI founders: Inside the investor lens with Jon McNeill, Aileen Lee,
                     </h2>
                     <p className="text-sm text-gray-600">
                         Short description text goes here
                     </p>
                 </div>
+
                 {/* Card 2 */}
-                <div className="bg-white shadow rounded-lg p-6 flex flex-col justify-between">
+                <div className="group bg-white shadow p-6 flex flex-col justify-between cursor-pointer">
                     <p className="text-sm font-medium text-green-600 mb-3">
                         <span className="inline-block border-t border-gray-400">
                             GAMMING
                         </span>
                     </p>
-                    <h2 className="text-xl font-bold text-gray-900 mb-3">
+                    <h2 className="text-xl font-bold text-gray-900 mb-3 inline-block group-hover:underline underline-offset-4 decoration-2">
                         Mirror founder Brynn Putnam to unveil her gaming hardware startup at TechCrunch Disrupt 2025
                     </h2>
                     <p className="text-sm text-gray-600">
                         TechCrunch Events - 18 hours ago
                     </p>
                 </div>
+
                 {/* Card 3 */}
-                <div className="bg-white shadow rounded-lg p-6 flex flex-col justify-between">
+                <div className="group bg-white shadow p-6 flex flex-col justify-between cursor-pointer">
                     <p className="text-sm font-medium text-green-600 mb-3">
                         <span className="inline-block border-t border-gray-400">
                             TECHCRUNCH DISRUPT 2025
                         </span>
                     </p>
-                    <h2 className="text-xl font-bold text-gray-900 mb-3">
+                    <h2 className="text-xl font-bold text-gray-900 mb-3 inline-block group-hover:underline underline-offset-4 decoration-2">
                         Vinod Khosla on AI, moonshots, and building enduring startups — all at TechCrunch Disrupt 2025
                     </h2>
                     <p className="text-sm text-gray-600">
@@ -126,13 +129,14 @@ const RoadDisrupt = () => {
                     </p>
                 </div>
 
+
                 {/* Card 4 */}
                 <div >
 
                 </div>
             </div>
 
-            <div className="grid grid-cols-1 my-8 px-4 lg:grid-cols-6 h-20">
+            <div className="grid grid-cols-1 mt-4 px-4 lg:grid-cols-6 h-20">
                 <div className="lg:col-span-4 grid grid-rows-2">
                     <div className="grid grid-cols-2">
                         <div className="bg-blue-600"></div>
